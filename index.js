@@ -38,7 +38,7 @@ console.log((6 + 10) / 2 * 5 - 10); //30
 
 // Assignment Operators
 console.log(x = x + 1); //2
-console.log(x+= 1); //3
+console.log(x += 1); //3
 // Try and figure out the difference
 console.log(x++); //4 (returns 3)
 console.log(++x); //5 
@@ -46,7 +46,7 @@ console.log(++x); //5
 // Relational Operators
 console.log(5 > 3); //true
 console.log(3 != 3); //False
-console.log(!5>3); //False
+console.log(!5 > 3); //False
 
 // Mismatched Types
 console.log(5 + "5"); //55
@@ -55,7 +55,7 @@ console.log(5 * "5"); //25
 console.log(1 == true); // True
 console.log(1 === true); // False
 
-const arr = ["Ewa","Marcin","Anah2","Kaisa","Zia"];
+const arr = ["Ewa", "Marcin", "Anah2", "Kaisa", "Zia"];
 console.log(arr);
 console.log(arr[1]);
 arr[1] = "Mimi"
@@ -76,7 +76,16 @@ arr.push("Milly")
 console.log(arr);
 arr.pop()
 console.log(arr);
-arr.splice(4,0,"Test","Test2")
+arr.splice(4, 0, "Test", "Test2")
 console.log(arr);
-arr.splice(5,1,"Changed");
+arr.splice(5, 1, "Changed");
 console.log(arr);
+if (true) { console.log(arr); }
+
+let numba = 10;
+
+if (numba % 5 === 0 && numba % 3 === 0) { console.log("FizzBuzz"); }
+else if (numba % 5 === 0) {
+    console.log("Buzz");
+} else if (numba % 3 === 0) console.log("Fizz");
+    else {console.log("Out of range");} 
