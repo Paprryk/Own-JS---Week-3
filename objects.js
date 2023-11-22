@@ -52,9 +52,10 @@ for (const person of people) {
 }
 let oldest = { age: 0 };
 for (const person of people) {
-    if (person.age > oldest.age) 
-    { oldest.age = person.age };
-    (oldest.name = person.name)
+    if (person.age > oldest.age){ 
+        { oldest.age = person.age };
+        (oldest.name = person.name)
+    }
 }
 
 console.log("Oldest:", oldest);
