@@ -48,16 +48,23 @@ for (const person of people) {
         "Job:", person.job,
         "Hobbies:", person.hobbies,
         "pets", person.pets,
-);
+    );
 }
-let max = 0
-let oldest = ""
-for (const person of people) 
-    {if (person.age > max)
-        {max = person.age};
-        (oldest = person.name)
-    }
-        
-console.log("Oldest:",oldest,max);
-    
+let oldest = { age: 0 };
+for (const person of people) {
+    if (person.age > oldest.age) 
+    { oldest.age = person.age };
+    (oldest.name = person.name)
+}
 
+console.log("Oldest:", oldest);
+
+let youngest = { age: 999 };
+for (const person of people) {
+    if (person.age < youngest.age){
+        {youngest.age = person.age};
+        (youngest.name = person.name)
+    } 
+}
+
+console.log("Youngest:", youngest);
