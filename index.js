@@ -82,7 +82,7 @@ arr.splice(5, 1, "Changed");
 console.log(arr);
 if (true) { console.log(arr); }
 
-let numba = 10;
+let numba = 1;
 
 if (numba % 5 === 0 && numba % 3 === 0) { console.log("FizzBuzz"); }
 else if (numba % 5 === 0) {
